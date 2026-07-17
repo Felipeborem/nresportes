@@ -22,6 +22,7 @@
         <nav>
             <a href="#home">Início</a>
             <a href="#modalidades">Modalidades</a>
+            <a href="#showcase">Vídeo</a>
             <a href="#historico">Números</a>
             <a href="#eventos">Eventos</a>
             <a href="#preços">Preços</a>
@@ -50,79 +51,23 @@
                 </div>
             </div>
             <div class="hero-img">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800" alt="Treino NR Esportes">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800" 
+                     alt="Treino NR Esportes"
+                     class="hero-foto">
             </div>
         </div>
     </section>
 
-    <!-- HISTÓRICO / NOSSOS NÚMEROS -->
-    <section class="historico" id="historico">
+    <!-- EVENTOS -->
+    <section class="eventos" id="eventos">
         <div class="container">
-            <h2 class="titulo-secao">NOSSA <span class="destaque">HISTÓRIA</span> EM NÚMEROS</h2>
-            <p class="sub-titulo">Anos de dedicação, evolução e muita história pra contar. Confira os números que fazem da NR Esportes referência em Vila Velha.</p>
+            <h2 class="titulo-secao">PRÓXIMOS <span class="destaque">EVENTOS</span></h2>
+            <p class="sub-titulo">Fique por dentro de tudo que rola na NR Esportes. Campeonatos, seminários, workshops e muito mais.</p>
             
-            <div class="numeros-grid">
-                <div class="numero-card">
-                    <div class="numero-icon">👥</div>
-                    <div class="numero-valor" data-target="500">0</div>
-                    <p>Alunos Ativos</p>
-                </div>
-                <div class="numero-card">
-                    <div class="numero-icon">🏆</div>
-                    <div class="numero-valor" data-target="45">0</div>
-                    <p>Torneios Realizados</p>
-                </div>
-                <div class="numero-card">
-                    <div class="numero-icon">🎉</div>
-                    <div class="numero-valor" data-target="120">0</div>
-                    <p>Eventos Organizados</p>
-                </div>
-                <div class="numero-card">
-                    <div class="numero-icon">🥇</div>
-                    <div class="numero-valor" data-target="280">0</div>
-                    <p>Medalhas Conquistadas</p>
-                </div>
-                <div class="numero-card">
-                    <div class="numero-icon">⭐</div>
-                    <div class="numero-valor" data-target="8">0</div>
-                    <p>Anos de História</p>
-                </div>
-                <div class="numero-card">
-                    <div class="numero-icon">🥋</div>
-                    <div class="numero-valor" data-target="15">0</div>
-                    <p>Professores Qualificados</p>
-                </div>
-            </div>
-
-            <!-- LINHA DO TEMPO -->
-            <div class="timeline">
-                <h3 class="timeline-titulo">NOSSA JORNADA</h3>
-                <div class="timeline-grid">
-                    <div class="timeline-item">
-                        <div class="timeline-ano">2018</div>
-                        <h4>Fundação</h4>
-                        <p>NR Esportes nasce em Vila Velha com a missão de transformar vidas através do esporte.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-ano">2020</div>
-                        <h4>Primeiro Torneio</h4>
-                        <p>Realização do primeiro Campeonato de Jiu-Jitsu NR Open, reunindo 200 atletas.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-ano">2022</div>
-                        <h4>Expansão</h4>
-                        <p>Inauguração da nova estrutura com 800m² e equipamentos de última geração.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-ano">2024</div>
-                        <h4>Referência Regional</h4>
-                        <p>NR se torna referência no Espírito Santo com mais de 500 alunos e 45 torneios.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-ano">2026</div>
-                        <h4>O Melhor Está Por Vir</h4>
-                        <p>Novas modalidades, novos desafios e a mesma paixão de sempre.</p>
-                    </div>
+            <div class="eventos-grid" id="eventos-container">
+                <div class="evento-loading">
+                    <div class="spinner"></div>
+                    <p>Carregando eventos...</p>
                 </div>
             </div>
         </div>
@@ -157,44 +102,118 @@
                         <a href="#contato" class="mod-link">SAIBA MAIS →</a>
                     </div>
                 </div>
-                <div class="mod-card">
-                    <div class="mod-img jiu"></div>
-                    <div class="mod-content">
-                        <h3>Jiu-Jitsu</h3>
-                        <p>Arte marcial que transforma corpo, mente e espírito.</p>
-                        <a href="#contato" class="mod-link">SAIBA MAIS →</a>
-                    </div>
-                </div>
-                <div class="mod-card">
-                    <div class="mod-img box"></div>
-                    <div class="mod-content">
-                        <h3>Boxe</h3>
-                        <p>Aprenda a nobre arte e treine como um verdadeiro lutador.</p>
-                        <a href="#contato" class="mod-link">SAIBA MAIS →</a>
-                    </div>
-                </div>
-                <div class="mod-card">
-                    <div class="mod-img muay"></div>
-                    <div class="mod-content">
-                        <h3>Muay Thai</h3>
-                        <p>A arte marcial tailandesa completa: corpo, mente e técnica.</p>
-                        <a href="#contato" class="mod-link">SAIBA MAIS →</a>
-                    </div>
-                </div>
+              
+        
             </div>
         </div>
     </section>
 
-    <!-- EVENTOS (carregado dinamicamente) -->
-    <section class="eventos" id="eventos">
+    <!-- SHOWCASE VÍDEO + FOTO -->
+    <section class="showcase" id="showcase">
         <div class="container">
-            <h2 class="titulo-secao">PRÓXIMOS <span class="destaque">EVENTOS</span></h2>
-            <p class="sub-titulo">Fique por dentro de tudo que rola na NR Esportes. Campeonatos, seminários, workshops e muito mais.</p>
+            <h2 class="titulo-secao">VEJA A NR EM <span class="destaque">AÇÃO</span></h2>
+            <p class="sub-titulo">Conheça nossa estrutura, nossos treinos e a energia que só a NR Esportes tem. 🎬</p>
             
-            <div class="eventos-grid" id="eventos-container">
-                <div class="evento-loading">
-                    <div class="spinner"></div>
-                    <p>Carregando eventos...</p>
+            <div class="showcase-grid">
+                <!-- CARD VÍDEO -->
+                <div class="showcase-video-card">
+                    <video autoplay muted loop playsinline class="showcase-video">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-video-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+
+                <!-- CARD FOTO -->
+                <div class="showcase-foto-card">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800" 
+                         alt="Estrutura NR Esportes"
+                         class="showcase-foto">
+                </div>
+            </div>
+
+            <!-- ESTATÍSTICAS -->
+            <div class="showcase-info">
+                <div class="showcase-stat">
+                    <div class="showcase-stat-icon">🏋️</div>
+                    <h3>100m²</h3>
+                    <p>de estrutura completa</p>
+                </div>
+                <div class="showcase-stat">
+                    <div class="showcase-stat-icon">💪</div>
+                    <h3>+10</h3>
+                    <p>aparelhos de ponta</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTÓRICO / NOSSOS NÚMEROS -->
+    <section class="historico" id="historico">
+        <div class="container">
+            <h2 class="titulo-secao">NOSSA <span class="destaque">HISTÓRIA</span> EM NÚMEROS</h2>
+            <p class="sub-titulo">Anos de dedicação, evolução e muita história pra contar. Confira os números que fazem da NR Esportes referência em Vila Velha.</p>
+            
+            <div class="numeros-grid">
+                <div class="numero-card">
+                    <div class="numero-icon">👥</div>
+                    <div class="numero-valor" data-target="100">0</div>
+                    <p>Alunos Ativos</p>
+                </div>
+                <div class="numero-card">
+                    <div class="numero-icon">🏆</div>
+                    <div class="numero-valor" data-target="12">0</div>
+                    <p>Torneios Realizados</p>
+                </div>
+                <div class="numero-card">
+                    <div class="numero-icon">🎉</div>
+                    <div class="numero-valor" data-target="34">0</div>
+                    <p>Eventos Organizados</p>
+                </div>
+                <div class="numero-card">
+                    <div class="numero-icon">🥇</div>
+                    <div class="numero-valor" data-target="30">0</div>
+                    <p>Medalhas Conquistadas</p>
+                </div>
+                <div class="numero-card">
+                    <div class="numero-icon">⭐</div>
+                    <div class="numero-valor" data-target="12">0</div>
+                    <p>Anos de História</p>
+                </div>
+                
+            </div>
+
+            <!-- LINHA DO TEMPO -->
+            <div class="timeline">
+                <h3 class="timeline-titulo">NOSSA JORNADA</h3>
+                <div class="timeline-grid">
+                    <div class="timeline-item">
+                        <div class="timeline-ano">2014</div>
+                        <h4>Fundação</h4>
+                        <p>NR Esportes nasce em Vila Velha com a missão de transformar vidas através do esporte.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-ano">2020</div>
+                        <h4>Primeiro Torneio</h4>
+                        <p>Realização do primeiro Campeonato de Beach tennis NR Open, reunindo 200 atletas.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-ano">2022</div>
+                        <h4>Expansão</h4>
+                        <p>Inauguração da nova estrutura com 100m² e equipamentos de última geração.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-ano">2024</div>
+                        <h4>Referência Regional</h4>
+                        <p>NR se torna referência no Espírito Santo com mais de 100 alunos e 45 torneios.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-ano">2026</div>
+                        <h4>O Melhor Está Por Vir</h4>
+                        <p>Novas modalidades, novos desafios e a mesma paixão de sempre.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,35 +241,12 @@
                             <td>Fechado</td>
                         </tr>
                         <tr>
-                            <td>Cross Training</td>
-                            <td>06h, 12h, 18h, 20h</td>
-                            <td>08h, 10h</td>
-                            <td>Fechado</td>
-                        </tr>
-                        <tr>
                             <td>Funcional</td>
                             <td>07h, 17h</td>
                             <td>09h</td>
                             <td>Fechado</td>
                         </tr>
-                        <tr>
-                            <td>Jiu-Jitsu</td>
-                            <td>19h, 20h30</td>
-                            <td>10h</td>
-                            <td>Fechado</td>
-                        </tr>
-                        <tr>
-                            <td>Boxe</td>
-                            <td>18h, 20h</td>
-                            <td>09h</td>
-                            <td>Fechado</td>
-                        </tr>
-                        <tr>
-                            <td>Muay Thai</td>
-                            <td>19h30</td>
-                            <td>11h</td>
-                            <td>Fechado</td>
-                        </tr>
+                       
                     </tbody>
                 </table>
             </div>
@@ -355,14 +351,14 @@
                         <div class="local-icon">📍</div>
                         <div>
                             <h3>Endereço</h3>
-                            <p>Rua Exemplo, 123 - Centro<br>Vila Velha - ES, 29100-000</p>
+                            <p>R. José Pena Medina, 216 -<br> Praia da Costa, Vila Velha<br>
                         </div>
                     </div>
                     <div class="local-item">
                         <div class="local-icon">📱</div>
                         <div>
                             <h3>WhatsApp</h3>
-                            <p>(27) 99999-9999</p>
+                            <p>(27) 99879-0257</p>
                         </div>
                     </div>
                     <div class="local-item">
@@ -381,14 +377,7 @@
                     </div>
                 </div>
                 <div class="local-mapa">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.123456!2d-40.2976!3d-20.3297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDE5JzQ3LjkiUyA0MMKwMTcnNTEuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4466.8067443438995!2d-40.288265723980395!3d-20.341142051244642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb8179ac60afab9%3A0x4a21b8cf183b7eda!2sNR%20ESPORTES%20ADVENTURE!5e1!3m2!1spt-BR!2sbr!4v1784316529424!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
             </div>
         </div>
@@ -398,9 +387,8 @@
     <section class="cta-section" id="contato">
         <div class="container">
             <h2>VAMOS COMEÇAR SUA <span class="destaque">JORNADA</span>?</h2>
-            <p>Faça sua matrícula agora e ganhe uma <strong>aula experimental gratuita</strong>!</p>
-            <a href="https://wa.me/5527999999999" class="btn-primary big">FALAR NO WHATSAPP</a>
-            <p class="cta-aviso">⚡ Vagas limitadas esta semana</p>
+            <p>Faça sua matrícula agora - <strong>aula experimental gratuita</strong>!</p>
+            <a href="https://wa.me/>27998790257" class="btn-primary big">FALAR NO WHATSAPP</a>
         </div>
     </section>
 
@@ -423,15 +411,12 @@
                 </div>
                 <div>
                     <h4>REDES SOCIAIS</h4>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">TikTok</a>
-                    <a href="#">YouTube</a>
+                    <a href="https://www.instagram.com/nresportes/">Instagram</a>
                 </div>
                 <div>
                     <h4>CONTATO</h4>
                     <p>📍 Vila Velha - ES</p>
-                    <p>📱 (27) 99999-9999</p>
+                    <p>📱 (27) 99879-0257</p>
                     <p>📧 contato@nresportes.com.br</p>
                 </div>
             </div>
@@ -439,8 +424,8 @@
         </div>
     </footer>
 
-    <!-- WHATSAPP FLUTUANTE COM SVG -->
-    <a href="https://wa.me/5527999999999" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+    <!-- WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/27998790257" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" fill="white">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
@@ -496,15 +481,19 @@
         const historicoSection = document.querySelector('.historico');
         if (historicoSection) numeroObserver.observe(historicoSection);
 
-
-        /* ============================================================
-           LÓGICA GOOGLE SHEETS API V4 - VERSÃO BLINDADA
-           ============================================================ */
+        /* LÓGICA GOOGLE SHEETS API V4 */
         const CONFIG = {
             API_KEY: 'AIzaSyA-7LZCbtIrA6Wg_acpTCKo9-6AGXUow0Q', 
             SHEET_ID: '1iA_xTcmtL0hXxgpE6w6TTwsQ5G423urMHDhtSOZsB5o', 
-            RANGE: 'Página1!A:H', // VERIFIQUE SE O NOME DA ABA É EXATAMENTE Página1
+            RANGE: 'Página1!A:H',
         };
+
+        function parseDate(dateStr) {
+            if (!dateStr) return new Date(9999, 11, 31);
+            const parts = dateStr.split('/');
+            if (parts.length < 3) return new Date(9999, 11, 31);
+            return new Date(parts[2], parts[1] - 1, parts[0]);
+        }
 
         function formatImageUrl(url) {
             if (!url) return 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600';
@@ -528,55 +517,44 @@
 
         async function fetchEventos() {
             const container = document.getElementById('eventos-container');
-            console.log("Iniciando busca de eventos...");
-
             try {
-                // Criamos um controle de tempo para a requisição não travar o site
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 segundos limite
-
-                const response = await fetch(
-                    `https://sheets.googleapis.com/v4/spreadsheets/${CONFIG.SHEET_ID}/values/${CONFIG.RANGE}?key=${CONFIG.API_KEY}`, 
-                    { signal: controller.signal }
-                );
-                
-                clearTimeout(timeoutId);
-
-                if (!response.ok) {
-                    throw new Error(`Erro HTTP: ${response.status}. Verifique se a planilha está pública.`);
-                }
-                
+                const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${CONFIG.SHEET_ID}/values/${CONFIG.RANGE}?key=${CONFIG.API_KEY}`);
+                if (!response.ok) throw new Error("Erro na requisição");
                 const data = await response.json();
-                console.log("Dados recebidos:", data);
-
-                if (!data.values || data.values.length === 0) {
-                    throw new Error("A planilha está vazia ou a aba não foi encontrada.");
-                }
+                if (!data.values) throw new Error("Nenhum dado encontrado");
 
                 const headers = data.values[0].map(h => h.toLowerCase().trim());
-                const rows = data.values.slice(1).map(row => {
+                let rows = data.values.slice(1).map(row => {
                     let obj = {};
                     headers.forEach((h, i) => { obj[h] = row[i]; });
                     return obj;
                 });
 
-                renderEventos(rows);
+                const hoje = new Date();
+                hoje.setHours(0, 0, 0, 0);
+
+                const eventosFuturos = rows.filter(ev => {
+                    const dataEvento = parseDate(ev.data || ev.data_evento);
+                    return dataEvento >= hoje;
+                });
+
+                eventosFuturos.sort((a, b) => {
+                    return parseDate(a.data || a.data_evento) - parseDate(b.data || b.data_evento);
+                });
+
+                renderEventos(eventosFuturos);
             } catch (e) {
-                console.error("Erro detalhado:", e);
-                container.innerHTML = `
-                    <div class="evento-erro" style="color: white; text-align: center; padding: 40px;">
-                        <p>❌ Erro: ${e.message}</p>
-                        <p style="font-size: 12px; margin-top: 10px;">Verifique se a planilha está como "Qualquer pessoa com o link pode ler".</p>
-                    </div>`;
+                console.error("Erro:", e);
+                container.innerHTML = '<div class="evento-erro"><p>Erro ao carregar eventos.</p></div>';
             }
         }
 
         function renderEventos(eventos) {
             const container = document.getElementById('eventos-container');
-            container.innerHTML = ''; // LIMPA O "CARREGANDO EVENTOS..."
+            container.innerHTML = '';
 
             if (eventos.length === 0) {
-                container.innerHTML = '<div class="evento-erro"><p style="color:white">Nenhum evento programado.</p></div>';
+                container.innerHTML = '<div class="evento-erro"><p>Não há eventos programados para as próximas datas.</p></div>';
                 return;
             }
 
@@ -652,9 +630,12 @@
 
         document.addEventListener('DOMContentLoaded', fetchEventos);
 
-
+        // Mensagem no console
+        console.log(
+            "%c💙 Web feito por B&T Tech",
+            "color: #1A3FAA; font-size: 24px; font-weight: bold; font-family: sans-serif;"
+        );
     </script>
-
 
 </body>
 </html>
